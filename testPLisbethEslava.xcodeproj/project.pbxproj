@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC942D9F294CD97C008F89AF /* FishesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942D9E294CD97C008F89AF /* FishesViewModel.swift */; };
+		BC942DA1294CDAD0008F89AF /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942DA0294CDAD0008F89AF /* Fish.swift */; };
+		BC942DA5294CDFBC008F89AF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942DA4294CDFBC008F89AF /* APIService.swift */; };
+		BC942DB8294D06E6008F89AF /* DetailFishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942DB6294D06E6008F89AF /* DetailFishCollectionViewCell.swift */; };
+		BC942DB9294D06E6008F89AF /* DetailFishCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC942DB7294D06E6008F89AF /* DetailFishCollectionViewCell.xib */; };
+		BC942DBC294D1CAC008F89AF /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942DBB294D1CAC008F89AF /* UIImageViewExtension.swift */; };
 		BCA3010D294A8A6C0046FB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA3010C294A8A6C0046FB21 /* AppDelegate.swift */; };
 		BCA3010F294A8A6C0046FB21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA3010E294A8A6C0046FB21 /* SceneDelegate.swift */; };
 		BCA30111294A8A6C0046FB21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA30110294A8A6C0046FB21 /* ViewController.swift */; };
-		BCA30114294A8A6C0046FB21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA30112294A8A6C0046FB21 /* Main.storyboard */; };
+		BCA30114294A8A6C0046FB21 /* FishHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA30112294A8A6C0046FB21 /* FishHome.storyboard */; };
 		BCA30116294A8A6F0046FB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA30115294A8A6F0046FB21 /* Assets.xcassets */; };
 		BCA30119294A8A6F0046FB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA30117294A8A6F0046FB21 /* LaunchScreen.storyboard */; };
 		BCA30124294A8A6F0046FB21 /* testPLisbethEslavaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA30123294A8A6F0046FB21 /* testPLisbethEslavaTests.swift */; };
@@ -36,11 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC942D9E294CD97C008F89AF /* FishesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesViewModel.swift; sourceTree = "<group>"; };
+		BC942DA0294CDAD0008F89AF /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		BC942DA4294CDFBC008F89AF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		BC942DB6294D06E6008F89AF /* DetailFishCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFishCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC942DB7294D06E6008F89AF /* DetailFishCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFishCollectionViewCell.xib; sourceTree = "<group>"; };
+		BC942DBB294D1CAC008F89AF /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		BCA30109294A8A6C0046FB21 /* testPLisbethEslava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testPLisbethEslava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA3010C294A8A6C0046FB21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA3010E294A8A6C0046FB21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BCA30110294A8A6C0046FB21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BCA30113294A8A6C0046FB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCA30113294A8A6C0046FB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FishHome.storyboard; sourceTree = "<group>"; };
 		BCA30115294A8A6F0046FB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCA30118294A8A6F0046FB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCA3011A294A8A6F0046FB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +88,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC942D99294CD75C008F89AF /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				BC942DA4294CDFBC008F89AF /* APIService.swift */,
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		BC942D9A294CD78A008F89AF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BC942D9E294CD97C008F89AF /* FishesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BC942D9B294CD79E008F89AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC942DA0294CDAD0008F89AF /* Fish.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC942D9C294CD7A9008F89AF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC942DBB294D1CAC008F89AF /* UIImageViewExtension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BC942D9D294CD7B7008F89AF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCA30110294A8A6C0046FB21 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BC942DA6294CEB60008F89AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC942DB1294CFB3F008F89AF /* DetailFishCell */,
+				BCA30112294A8A6C0046FB21 /* FishHome.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC942DB1294CFB3F008F89AF /* DetailFishCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC942DB6294D06E6008F89AF /* DetailFishCollectionViewCell.swift */,
+				BC942DB7294D06E6008F89AF /* DetailFishCollectionViewCell.xib */,
+			);
+			path = DetailFishCell;
+			sourceTree = "<group>";
+		};
 		BCA30100294A8A6C0046FB21 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +169,14 @@
 		BCA3010B294A8A6C0046FB21 /* testPLisbethEslava */ = {
 			isa = PBXGroup;
 			children = (
+				BC942D99294CD75C008F89AF /* API Service */,
+				BC942D9A294CD78A008F89AF /* ViewModels */,
+				BC942D9B294CD79E008F89AF /* Models */,
+				BC942D9C294CD7A9008F89AF /* Common */,
+				BC942DA6294CEB60008F89AF /* Views */,
+				BC942D9D294CD7B7008F89AF /* Controllers */,
 				BCA3010C294A8A6C0046FB21 /* AppDelegate.swift */,
 				BCA3010E294A8A6C0046FB21 /* SceneDelegate.swift */,
-				BCA30110294A8A6C0046FB21 /* ViewController.swift */,
-				BCA30112294A8A6C0046FB21 /* Main.storyboard */,
 				BCA30115294A8A6F0046FB21 /* Assets.xcassets */,
 				BCA30117294A8A6F0046FB21 /* LaunchScreen.storyboard */,
 				BCA3011A294A8A6F0046FB21 /* Info.plist */,
@@ -190,6 +264,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					FishList,
+				);
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
@@ -233,7 +310,8 @@
 			files = (
 				BCA30119294A8A6F0046FB21 /* LaunchScreen.storyboard in Resources */,
 				BCA30116294A8A6F0046FB21 /* Assets.xcassets in Resources */,
-				BCA30114294A8A6C0046FB21 /* Main.storyboard in Resources */,
+				BC942DB9294D06E6008F89AF /* DetailFishCollectionViewCell.xib in Resources */,
+				BCA30114294A8A6C0046FB21 /* FishHome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +336,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC942DB8294D06E6008F89AF /* DetailFishCollectionViewCell.swift in Sources */,
+				BC942DA1294CDAD0008F89AF /* Fish.swift in Sources */,
+				BC942DA5294CDFBC008F89AF /* APIService.swift in Sources */,
 				BCA30111294A8A6C0046FB21 /* ViewController.swift in Sources */,
 				BCA3010D294A8A6C0046FB21 /* AppDelegate.swift in Sources */,
+				BC942D9F294CD97C008F89AF /* FishesViewModel.swift in Sources */,
+				BC942DBC294D1CAC008F89AF /* UIImageViewExtension.swift in Sources */,
 				BCA3010F294A8A6C0046FB21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,12 +380,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BCA30112294A8A6C0046FB21 /* Main.storyboard */ = {
+		BCA30112294A8A6C0046FB21 /* FishHome.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BCA30113294A8A6C0046FB21 /* Base */,
 			);
-			name = Main.storyboard;
+			name = FishHome.storyboard;
 			sourceTree = "<group>";
 		};
 		BCA30117294A8A6F0046FB21 /* LaunchScreen.storyboard */ = {
@@ -437,9 +520,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QP98C3PJN3;
+				DEVELOPMENT_TEAM = BVR6CRT2NX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = testPLisbethEslava/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FishApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -450,7 +534,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = leslava.testPLisbethEslava;
+				PRODUCT_BUNDLE_IDENTIFIER = leslava.testFish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -465,9 +549,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QP98C3PJN3;
+				DEVELOPMENT_TEAM = BVR6CRT2NX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = testPLisbethEslava/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FishApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -478,7 +563,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = leslava.testPLisbethEslava;
+				PRODUCT_BUNDLE_IDENTIFIER = leslava.testFish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
