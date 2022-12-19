@@ -15,6 +15,12 @@ class DetailFishCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
     
+    override func prepareForReuse() {
+        titleLabel.text = ""
+        subtitleLabel.text = ""
+        profileImageView.image = nil
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = #colorLiteral(red: 0.2549019608, green: 0.8078431373, blue: 0.7921568627, alpha: 1)

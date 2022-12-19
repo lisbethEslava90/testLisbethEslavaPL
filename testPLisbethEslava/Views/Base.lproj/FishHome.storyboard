@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="glD-p9-ITU">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailFishCollectionViewCell" id="glD-p9-ITU">
                                         <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eDY-aH-e6C">
@@ -38,18 +38,24 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="UqE-Dy-QMp">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eeX-DH-Uiq" secondAttribute="bottom" id="39I-bj-sUD"/>
                             <constraint firstItem="eeX-DH-Uiq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9oP-hd-4AZ"/>
+                            <constraint firstItem="UqE-Dy-QMp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oie-YB-m4W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eeX-DH-Uiq" secondAttribute="trailing" constant="16" id="aq0-07-4XD"/>
+                            <constraint firstItem="UqE-Dy-QMp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="btg-yy-7bt"/>
                             <constraint firstItem="eeX-DH-Uiq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sJ9-kV-KXa"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="fishListCollectionView" destination="eeX-DH-Uiq" id="fgU-bE-n0L"/>
+                        <outlet property="loaderView" destination="UqE-Dy-QMp" id="4zK-f0-eNN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

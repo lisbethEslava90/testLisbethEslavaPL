@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     private var fisheshViewModel: FishesViewModel!
     @IBOutlet weak var fishListCollectionView: UICollectionView!
+    @IBOutlet weak var loaderView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,16 +24,21 @@ class ViewController: UIViewController {
         fishListCollectionView.dataSource = self
         fishListCollectionView.backgroundColor = .clear
         fishListCollectionView.register(UINib(nibName: DetailFishCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DetailFishCollectionViewCell.identifier)
+        loaderView.color = #colorLiteral(red: 0.2549019608, green: 0.8078431373, blue: 0.7921568627, alpha: 1)
+        loaderView.startAnimating()
     }
     
     func displayFishesInformation() {
-        self.fisheshViewModel = FishesViewModel()
-        self.fisheshViewModel.bindFishesViewModelToController = {
+        fisheshViewModel = FishesViewModel()
+        fisheshViewModel.bindFishesViewModelToController = {
             self.updateDataStore()
         }
     }
     
     func updateDataStore() {
+        DispatchQueue.main.sync {
+            self.loaderView.stopAnimating()
+        }
         DispatchQueue.main.async {
             self.fishListCollectionView.reloadData()
         }
@@ -55,5 +61,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: 140)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let destinationVc = BiographyFishViewController()
+        destinationVc.specieName = fisheshViewModel.fishehInfo[indexPath.row].speciesName
+        self.show(destinationVc, sender: nil)
     }
 }

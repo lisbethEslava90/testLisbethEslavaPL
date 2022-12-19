@@ -13,6 +13,13 @@
 		BC942DB8294D06E6008F89AF /* DetailFishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942DB6294D06E6008F89AF /* DetailFishCollectionViewCell.swift */; };
 		BC942DB9294D06E6008F89AF /* DetailFishCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC942DB7294D06E6008F89AF /* DetailFishCollectionViewCell.xib */; };
 		BC942DBC294D1CAC008F89AF /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942DBB294D1CAC008F89AF /* UIImageViewExtension.swift */; };
+		BC942DBE294D23D4008F89AF /* BiographyFish.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942DBD294D23D4008F89AF /* BiographyFish.swift */; };
+		BC942DC0294D2469008F89AF /* SpeciesImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942DBF294D2469008F89AF /* SpeciesImage.swift */; };
+		BC942DC2294D2546008F89AF /* BiographyFishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942DC1294D2546008F89AF /* BiographyFishViewModel.swift */; };
+		BC942DC5294D25F5008F89AF /* BiographyFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942DC3294D25F5008F89AF /* BiographyFishViewController.swift */; };
+		BC942DC6294D25F5008F89AF /* BiographyFishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC942DC4294D25F5008F89AF /* BiographyFishViewController.xib */; };
+		BC942DCF294FA508008F89AF /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC942DCD294FA508008F89AF /* GalleryCollectionViewCell.swift */; };
+		BC942DD0294FA508008F89AF /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC942DCE294FA508008F89AF /* GalleryCollectionViewCell.xib */; };
 		BCA3010D294A8A6C0046FB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA3010C294A8A6C0046FB21 /* AppDelegate.swift */; };
 		BCA3010F294A8A6C0046FB21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA3010E294A8A6C0046FB21 /* SceneDelegate.swift */; };
 		BCA30111294A8A6C0046FB21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA30110294A8A6C0046FB21 /* ViewController.swift */; };
@@ -48,6 +55,13 @@
 		BC942DB6294D06E6008F89AF /* DetailFishCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFishCollectionViewCell.swift; sourceTree = "<group>"; };
 		BC942DB7294D06E6008F89AF /* DetailFishCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFishCollectionViewCell.xib; sourceTree = "<group>"; };
 		BC942DBB294D1CAC008F89AF /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		BC942DBD294D23D4008F89AF /* BiographyFish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyFish.swift; sourceTree = "<group>"; };
+		BC942DBF294D2469008F89AF /* SpeciesImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesImage.swift; sourceTree = "<group>"; };
+		BC942DC1294D2546008F89AF /* BiographyFishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyFishViewModel.swift; sourceTree = "<group>"; };
+		BC942DC3294D25F5008F89AF /* BiographyFishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyFishViewController.swift; sourceTree = "<group>"; };
+		BC942DC4294D25F5008F89AF /* BiographyFishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BiographyFishViewController.xib; sourceTree = "<group>"; };
+		BC942DCD294FA508008F89AF /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC942DCE294FA508008F89AF /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
 		BCA30109294A8A6C0046FB21 /* testPLisbethEslava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testPLisbethEslava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA3010C294A8A6C0046FB21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA3010E294A8A6C0046FB21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				BC942D9E294CD97C008F89AF /* FishesViewModel.swift */,
+				BC942DC1294D2546008F89AF /* BiographyFishViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -108,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				BC942DA0294CDAD0008F89AF /* Fish.swift */,
+				BC942DBD294D23D4008F89AF /* BiographyFish.swift */,
+				BC942DBF294D2469008F89AF /* SpeciesImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +140,7 @@
 		BC942D9D294CD7B7008F89AF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC942DC3294D25F5008F89AF /* BiographyFishViewController.swift */,
 				BCA30110294A8A6C0046FB21 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -131,8 +149,10 @@
 		BC942DA6294CEB60008F89AF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC942DCC294FA4E0008F89AF /* GalleryCell */,
 				BC942DB1294CFB3F008F89AF /* DetailFishCell */,
 				BCA30112294A8A6C0046FB21 /* FishHome.storyboard */,
+				BC942DC4294D25F5008F89AF /* BiographyFishViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +164,15 @@
 				BC942DB7294D06E6008F89AF /* DetailFishCollectionViewCell.xib */,
 			);
 			path = DetailFishCell;
+			sourceTree = "<group>";
+		};
+		BC942DCC294FA4E0008F89AF /* GalleryCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC942DCD294FA508008F89AF /* GalleryCollectionViewCell.swift */,
+				BC942DCE294FA508008F89AF /* GalleryCollectionViewCell.xib */,
+			);
+			path = GalleryCell;
 			sourceTree = "<group>";
 		};
 		BCA30100294A8A6C0046FB21 = {
@@ -309,6 +338,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCA30119294A8A6F0046FB21 /* LaunchScreen.storyboard in Resources */,
+				BC942DD0294FA508008F89AF /* GalleryCollectionViewCell.xib in Resources */,
+				BC942DC6294D25F5008F89AF /* BiographyFishViewController.xib in Resources */,
 				BCA30116294A8A6F0046FB21 /* Assets.xcassets in Resources */,
 				BC942DB9294D06E6008F89AF /* DetailFishCollectionViewCell.xib in Resources */,
 				BCA30114294A8A6C0046FB21 /* FishHome.storyboard in Resources */,
@@ -337,12 +368,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC942DB8294D06E6008F89AF /* DetailFishCollectionViewCell.swift in Sources */,
+				BC942DBE294D23D4008F89AF /* BiographyFish.swift in Sources */,
 				BC942DA1294CDAD0008F89AF /* Fish.swift in Sources */,
+				BC942DC2294D2546008F89AF /* BiographyFishViewModel.swift in Sources */,
 				BC942DA5294CDFBC008F89AF /* APIService.swift in Sources */,
 				BCA30111294A8A6C0046FB21 /* ViewController.swift in Sources */,
 				BCA3010D294A8A6C0046FB21 /* AppDelegate.swift in Sources */,
 				BC942D9F294CD97C008F89AF /* FishesViewModel.swift in Sources */,
 				BC942DBC294D1CAC008F89AF /* UIImageViewExtension.swift in Sources */,
+				BC942DC0294D2469008F89AF /* SpeciesImage.swift in Sources */,
+				BC942DC5294D25F5008F89AF /* BiographyFishViewController.swift in Sources */,
+				BC942DCF294FA508008F89AF /* GalleryCollectionViewCell.swift in Sources */,
 				BCA3010F294A8A6C0046FB21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

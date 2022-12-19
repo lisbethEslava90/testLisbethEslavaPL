@@ -8,6 +8,7 @@
 import Foundation
 
 struct Fish: Decodable {
+    
     let speciesName: String
     let region: String
     let speciesImage: SpeciesImage
@@ -16,13 +17,5 @@ struct Fish: Decodable {
         case speciesName = "Species Name"
         case region = "NOAA Fisheries Region"
         case speciesImage = "Species Illustration Photo"
-    }
-}
-
-struct SpeciesImage: Decodable {
-    let src: String
-    
-    enum CodingKeys: String, CodingKey {
-        case src = "src"
     }
 }
